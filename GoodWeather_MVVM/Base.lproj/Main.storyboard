@@ -58,10 +58,14 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="氣溫預報" id="oYl-34-F8f">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="gearshape" catalog="system" id="QZ5-fW-4cP"/>
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="gearshape" catalog="system" id="QZ5-fW-4cP">
+                            <connections>
+                                <segue destination="HnQ-dw-f99" kind="presentation" id="9wR-2a-mwZ"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="ZTx-Fy-tAC">
                             <connections>
-                                <segue destination="7Ht-0k-cUj" kind="presentation" id="fds-as-CNg"/>
+                                <segue destination="7Ht-0k-cUj" kind="presentation" identifier="AddWeatherViewController" id="fds-as-CNg"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -119,6 +123,41 @@
             </objects>
             <point key="canvasLocation" x="3089.3129770992364" y="-68.309859154929583"/>
         </scene>
+        <!--設定-->
+        <scene sceneID="WEM-D3-8yH">
+            <objects>
+                <tableViewController id="ysu-0G-hek" customClass="SettingTableViewController" customModule="GoodWeather_MVVM" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="nHV-Si-76e">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SettingCell" id="cLN-eH-34M">
+                                <rect key="frame" x="0.0" y="50" width="393" height="44.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cLN-eH-34M" id="R65-E8-JPj">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="44.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ysu-0G-hek" id="YcG-nZ-fdc"/>
+                            <outlet property="delegate" destination="ysu-0G-hek" id="Ibh-B6-HYU"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="設定" id="y36-FS-JNT">
+                        <barButtonItem key="rightBarButtonItem" title="確認" id="Upz-7p-hUz">
+                            <connections>
+                                <action selector="doneBtn" destination="ysu-0G-hek" id="H2z-D5-90d"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2WS-vY-UOF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3089.3129770992364" y="673.94366197183103"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="YXG-NA-A1B">
             <objects>
@@ -154,6 +193,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cWe-Uv-pS1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2162.5954198473282" y="-68.309859154929583"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="zUc-pQ-siL">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HnQ-dw-f99" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="OmI-3T-OxS">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ysu-0G-hek" kind="relationship" relationship="rootViewController" id="Vqb-l5-EYb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZK8-Pf-HFR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2163" y="674"/>
         </scene>
     </scenes>
     <resources>

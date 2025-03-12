@@ -11,7 +11,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		153A13892D79445E0059AAFE /* Exceptions for "GoodWeather_MVVM" folder in "GoodWeather_MVVM" target */ = {
+		153A13F62D799EF90059AAFE /* Exceptions for "GoodWeather_MVVM" folder in "GoodWeather_MVVM" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
@@ -21,10 +21,10 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		153A13792D79445C0059AAFE /* GoodWeather_MVVM */ = {
+		153A13EA2D799EF90059AAFE /* GoodWeather_MVVM */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				153A13892D79445E0059AAFE /* Exceptions for "GoodWeather_MVVM" folder in "GoodWeather_MVVM" target */,
+				153A13F62D799EF90059AAFE /* Exceptions for "GoodWeather_MVVM" folder in "GoodWeather_MVVM" target */,
 			);
 			path = GoodWeather_MVVM;
 			sourceTree = "<group>";
@@ -45,7 +45,7 @@
 		153A136E2D79445C0059AAFE = {
 			isa = PBXGroup;
 			children = (
-				153A13792D79445C0059AAFE /* GoodWeather_MVVM */,
+				153A13EA2D799EF90059AAFE /* GoodWeather_MVVM */,
 				153A13782D79445C0059AAFE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,7 +74,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				153A13792D79445C0059AAFE /* GoodWeather_MVVM */,
+				153A13EA2D799EF90059AAFE /* GoodWeather_MVVM */,
 			);
 			name = GoodWeather_MVVM;
 			packageProductDependencies = (
@@ -151,6 +151,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -179,6 +180,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

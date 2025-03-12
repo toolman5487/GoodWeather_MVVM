@@ -15,4 +15,12 @@ class WeatherCell: UITableViewCell {
     
     
     
+    func configure(_ vm: WeatherViewModel){
+        self.cityNameLabel.text = vm.city
+        self.cityNameLabel.textColor = .orange
+        self.temperatureLabel.text = "\(vm.temperature.formatAsDegree())"
+        self.temperatureLabel.textColor = .orange
+    }
+    
+    
 }
